@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/*hide footer info*/
+#footer {
+    display: none;
+}
+
+.priceCard {
+  border-radius: 10px;
+  max-width: 650px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+/*Top space */
+.header { 
+  grid-area: header;
+  background-color: white;
+  padding: 25px 40px 25px 40px;
+  }
+
+/*Bottom left space */
+.left {
+  grid-area: left;
+  background: hsl(179, 62%, 43%);
+  padding: 40px;
+  color: hsl(204, 43%, 93%)
+}
+
+/*Bottom right space */
+.right {
+  grid-area: right;
+  background-color: hsl(179, 46%, 51%);
+  padding: 40px;  
+  color: hsl(204, 43%, 93%);
+}
+
+.grid-container {
+  display: grid;
+  grid: 
+    'header header'
+    'left right';
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column; 
+  overflow: hidden;
+  margin: 0;
+}
+
+/*Change row to column for small screens */
+@media (max-width: 375px) {
+  .grid-container {
+    display: grid;
+    grid: 
+    'header'
+    'left'
+    'right';
+    max-width: 375px
+  }
+}
+
+/*Main heading */
+.join {
+  color: hsl(179, 62%, 43%);
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+/*Second heading */
+.guarantee {
+  color: hsl(71, 73%, 54%);
+  padding: 0;
+  margin: 0;
+  }
+
+/*Text in top section */
+.paragraph {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6;
+  padding: 0;
+  margin: 10px 0 10px 0;
+ }
+
+/*Price in second section */
+span b {
+  font-size: 3em;
+  padding: 0 10px 0 0;
+  color: hsl(204, 43%, 93%);
+}
+
+/*Price line in second section */
+span {
+  color: hsl(179, 57%, 60%);
+}
+
+/*header in second and third sections*/
+.monthly {
+  margin: 0;
+}
+
+ul.no-bullets {
+  color: hsl(177, 76%, 77%);
+  list-style-type: none; /* Remove bullets */
+  padding: 20px 0 0 0; 
+  margin: 0; 
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0 0 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
