@@ -1,0 +1,8 @@
+{
+    "editor.linkedEditing": true,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "css.completion.completePropertyWithSemicolon": false,
+    "less.completion.completePropertyWithSemicolon": false,
+    "scss.completion.completePropertyWithSemicolon": false
+}

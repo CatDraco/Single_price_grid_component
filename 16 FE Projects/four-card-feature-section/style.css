@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(229, 6%, 66%);
+}
+
+/*Main header*/
+h1 {
+    font-weight: lighter;
+    padding: 50px 0 0 0;
+    margin: 0;
+}
+
+/*Subhead*/
+.bold {
+    font-weight: bold;
+    color: hsl(234, 12%, 34%);
+    padding: 0;
+}
+
+/*Header paragraph*/
+.headerText {
+    font-size: 12px;
+}
+
+/*Section headers*/
+h4 {
+   color: hsl(234, 12%, 34%); 
+   margin: 0;
+}
+
+p {
+    font-size: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-auto-flow: column; 
+    grid-gap: 30px;
+    margin: 0px 70px 40px 70px;
+    align-items: center;
+}
+
+.header {
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.card {
+    position: relative;
+    height: 200px;
+    max-width: 280px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 10px 1px hsl(229, 6%, 90%);
+    padding: 20px 30px 30px 30px;
+    margin: 0;
+}
+
+.card1 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.card2 {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.card3 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.card4 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+/* Position of icons in boxes */
+article.card img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 35%;
+    padding: 0 20px 20px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*Change to 1 column for small screens */
+@media (max-width: 375px) {
+  .grid-container {
+      display: block;
+  }
+}
